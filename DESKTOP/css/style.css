@@ -37,14 +37,98 @@ p {
 input[type=text], input[type=tel], textarea {
     -webkit-appearance: none;
 }
-p, ul{
-    font-family: Helvetica;
-    font-size: 17px !important;
-    line-height: 30px !important;
-}
+
 body{
     background-color: white;
     color: black;
+}
+
+body a:link{
+    color: black;
+    -webkit-text-fill-color: black;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+section{
+    max-width: 1920px;
+    width: 100%;
+    min-width: 980px;
+    margin: 0 auto;
+}
+
+article{
+    display: block;
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+}
+p{
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    color: #333;
+    line-height: 28px;
+}
+article p{
+    width: 600px;
+}
+
+img{
+    width: 100%;
+}
+
+.block-header{
+    margin-bottom: 20px;
+}
+
+.block-footer{
+    margin-bottom: 0!important;
+}
+
+.outline{
+    width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.img-fullsize, .img-medium, .img-medium-, .img-medium--{
+    margin: 0 auto 20px auto;
+}
+.img-medium{
+    width: 600px;
+}
+
+.img-medium-{
+    width: 700px;
+}
+
+.img-medium--{
+    width: 1200px;
+}
+
+.img-left{
+    position: relative;
+    right: 12%;
+}
+
+.row{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  float: left;
+  width: 45%;
+}
+
+.column img{
+    width: 125%;
 }
 
 .font-bold{
@@ -53,25 +137,7 @@ body{
 .font-italic{
     font-style: italic;
 }
-body a:link{
-    color: black;
-    -webkit-text-fill-color: black;
-    font-weight: bold;
-    text-decoration:underline;
-}
 
-.block-header img{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.container{
-    max-width: 657.16px;
-    margin: 0 auto;
-}
-.column {
-  float: left;
-  width: 45%;
-}
 .column:nth-child(odd){
     margin-right: 5%;
 }
@@ -79,130 +145,4 @@ body a:link{
 .column:nth-child(even){
     margin-left: 5%;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column img{
-    width: 100%;
-}
-/*.outline, .row, .img-content{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }*/
-    .fix-container {
-        max-width: 1100px !important;
-    }
-    .img-notfull{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .outline img, .img-notfull img{
-        display: block;
-        margin: 0 auto;
-    }
-    .del-margin{
-        margin: 0 !important;
-    }
-    .img-foot img{
-        width: 100%;
-        margin-top: 10px;
-        display: block;
-    }
-    .full_screen{
-        width: 100%;
-    }
-    .full_screen img{
-        width: 100%;
-        margin: 0 auto;
-    }
 
-    .block-first{
-        /*margin-top: 40px;*/
-    }
-    img{
-        margin-bottom: 20px!important;
-    }
-    h3 iframe{
-        margin: 20px 0;
-    }
-    .img-left{
-        float: left;
-        width: 444px;
-        margin: 10px 60px 0 -70px;
-    }
-
-    .img-right{
-        float: right;
-        width: 444px;
-        margin: 10px -160px 0 60px;
-    }
-
-    .clearfix-left {
-      clear: left;
-  }
-
-  .clearfix-right {
-      clear: right;
-  }
-
-  .center-cropped {
-      width: 657.16px;
-      background-position: center center;
-      background-repeat: no-repeat;
-      margin-bottom: 20px;
-  }
-
-  .container p {
-    margin-bottom: 10px;
-}
-
-.button_buy{
-    max-width: 250px;
-    margin: 0 auto;
-}
-
-.buynow{
-    margin: auto;
-    width: 250px;
-    text-align: center;
-    line-height: 20.8px;
-    background: -webkit-linear-gradient(top,#f89406,#f76b1c);
-    border: 1px solid #d97f00;
-    padding: 5px 15px;
-    text-align: center;
-    color: rgb(255, 255, 0);
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 5px;
-    text-decoration: none;
-}
-
-.buynow span{
-    color: rgb(255, 255, 0);
-    font-weight: bold;
-}
-
-.outline-small{
-    display: inline-block !important;
-    margin-bottom: 20px;
-}
-
-.note{
-    font-size: 13px !important;
-    font-style: italic;
-}
-
-.override-background{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dddddd+0,ffffff+100 */
-    background: #dddddd; /* Old browsers */
-    background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
-}
