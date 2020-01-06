@@ -36,11 +36,11 @@ input[type=text], input[type=tel], textarea {
     -webkit-appearance: none;
 }
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 body a:link{
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration:underline;
 }
